@@ -1,0 +1,35 @@
+.navbar{
+    height: 10vh;
+    padding-top: 10px;
+
+}
+.nav{
+    min-width: 80%;
+}
+.logo{
+    min-width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    /* border: 1px solid rgba(182, 181, 181, 0.507); */
+}
+.nav-item{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.nav-item:first-child,
+.nav-item:last-child{
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #fff;
+
+}
+.nav-item a{
+    color: #fff;
+}

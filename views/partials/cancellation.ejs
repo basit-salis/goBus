@@ -1,0 +1,39 @@
+<% DATA.forEach(elem=> { %>
+    <%let Cnumber = JSON.stringify(elem.Cnumber) %> 
+    <%let RegNum = JSON.stringify(elem.RegNum) %> 
+    <%let NumberSeats = JSON.stringify(elem.NumberSeats) %> 
+    <%let start_point = JSON.stringify(elem.start_point) %> 
+    <%let start_time = JSON.stringify(elem.start_time) %> 
+    <%let drop_point = JSON.stringify(elem.drop_point) %> 
+    <%let drop_time = JSON.stringify(elem.drop_time) %> 
+    <%= drop_time %> 
+    <%= RegNum %> 
+  <%}); %> 
+
+
+  <% DATA.forEach(elem=> { %>
+    <tr>
+        <%let type = JSON.stringify(elem.type) %>
+        <%let Cnumber = JSON.stringify(elem.Cnumber) %>
+        <%let RegNum = JSON.stringify(elem.RegNum) %>
+        <%let NumberSeats = JSON.stringify(elem.NumberSeats) %>
+        <%let start_point = JSON.stringify(elem.start_point) %>
+        <%let start_time = JSON.stringify(elem.start_time) %>
+        <%let drop_point = JSON.stringify(elem.drop_point) %>
+        <%let drop_time = JSON.stringify(elem.drop_time) %>
+
+        <td scope="row"><%= drop_time %></td>
+        <td><%= RegNum %></td>
+        <td><%= type %></td>
+        <td><%= NumberSeats %></td>
+        <td><%= start_point %></td>
+        <td><%= start_time %></td>
+        <td><%= drop_point %></td>
+        <td><%= drop_time %></td>
+        <td>
+            <button class="btn btn-primary">view</button>
+            <button class="btn btn-success">edit</button>
+            <button class="btn btn-danger">delete</button>
+        </td>
+    </tr>
+    <%}); %>

@@ -1,0 +1,26 @@
+[
+    {
+        "from" : "Accra",
+        "destination" : "navrongo",
+        "date" : "12/34/21",
+        "something" : "12"
+    },
+    {
+        "from" : "Achimota",
+        "destination" : "tamale",
+        "date" : "23/34/21",
+        "something" : "12"
+    },
+    {
+        "from" : "kumasi",
+        "destination" : "Accra",
+        "date" : "12/34/21",
+        "something" : "12"
+    },
+    {
+        "from" : "kumasi",
+        "destination" : "Accra",
+        "date" : "12/34/21",
+        "something" : "12"
+    }
+]

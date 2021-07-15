@@ -1,0 +1,92 @@
+:root {
+	--primaryColor_deep:rgb(69, 16, 119);
+	--primaryColor:blueviolet;
+	--secondaryColor:blanchedalmond ;
+	--mainWhite: #fff;
+	--mainBlack: #222;
+	--mainGrey:#ececec;
+	--textColor:#5e5e5e;
+	--mainSpacing: 0.5rem;
+	--mainTransition: all 0.3s linear;
+	--shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.SignupInfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:-webkit-linear-gradient(right,var(--primaryColor),var(--primaryColor_deep)) ;
+}
+
+.SignupInfo img{
+    width: 800px;
+    height: 50px;
+}
+
+
+.SignupInfo h1{
+    font-size: 60px;
+    font-family: ms sans serif;
+    color: var(--mainGrey);
+    text-align:left;
+}
+
+.SignupInfo p{
+    font-size: 20px;
+    color: var(--mainGrey);
+    font-family: courier new;
+}
+
+.signupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--mainWhite);
+}
+.form-group{
+    width: 90%;
+}
+
+.signupForm input,
+button[type="submit"]{
+    border-radius: 0;
+    width: 90%;
+    height: 2.5em;
+    font-family: segoe script;
+}
+
+button[type="submit"]{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.signupForm h1{
+    position: relative;
+    color: var(--mainBlack);
+    font-family: courier new;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    top: -50px;
+    right: 2em;
+}
+
+.signupForm h1 a{
+    font-size: 18px;
+    font-family: courier new;
+    text-decoration: none;
+}
+
+

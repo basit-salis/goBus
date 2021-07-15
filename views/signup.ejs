@@ -1,0 +1,58 @@
+<div class="main_reg pt-4">
+
+    <div class="reg-form row ">
+
+        <div class="form-wrapper col-sm-12 col-md-6 p-0 ">
+            <div class="form-container-reg position-relative">
+                <div class="reg_head d-flex justify-content-md-center align-items-md-center">
+                    <h4 class="head_text">register here</h4>
+                </div>
+              
+                <%# include('./partials/errMessages'); %>
+                <form action="/users/signup" method="POST">
+
+                    <div class="reg-name form-group">
+                        <i class="fa fa-user"></i><input type="text" class="form-control account-username"
+                            placeholder="username" name="username" value="<%= typeof name != 'undefined' ? name : '' %>">
+                    </div>
+
+                    <div class="reg-email form-group">
+                        <i class="fa fa-envelope"></i><input type="text" class="form-control account-email"
+                            placeholder="email" name="mail" value="<%= typeof name != 'undefined' ? name : '' %>">
+                    </div>
+
+                    <div class="reg-password form-group">
+                        <i class="fa fa-lock"></i><input type="password" class="form-control account-password"
+                            placeholder="password" name="pass"
+                            value="<%= typeof name != 'undefined' ? name : '' %>">
+                    </div>
+
+                    <div class="reg-password form-group">
+                        <i class="fa fa-lock"></i><input type="password" class="form-control account-repassword"
+                            placeholder="confirm password" name="repass"
+                            value="<%= typeof name != 'undefined' ? name : '' %>">
+                    </div>
+                    <div class="policy d-flex justify-content-center align-items-center flex-column align-self-center mx-auto">
+                        <p class="Terms">By clicking the Sign Up button, you have agree to our <span style="color: aqua;">Terms & conditions</span> ,
+                            and <span style="color: aqua;"> Privacy Policy</span>.
+                        </p>
+                        <button type="submit" class="reg_button btn rounded-pill">create account</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="group-desc col-sm-12 col-md-6 p-0">
+            <div class="linen d-flex justify-content-center align-items-center flex-column px-sm-2 px-md-5 ">
+                <img src="/assets/img/ok.jpg" alt="logo" class="py-2" style="width: 60%; height: 30%;">
+                <h3 class="pt-md-4">hello owrld</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam vitae reprehenderit
+                    inventore veniam commodi quibusdam minima minus magni quam molestias esse, corporis eum. Aliquid
+                    modi facilis ratione facere laborum.</p>
+                <button class="reg_button_ btn rounded-pill"><a href="/">learn more</a></button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,92 @@
+
+.company__header{
+    background: linear-gradient(var(--primaryColor), rgba(204, 163, 0, 0.767)), url('../img/stc2.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.company__banner{
+    width: 100%;
+    height: 60vh;
+}
+.company__right,
+.company__left{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    /* border: 1px solid red; */
+}
+.company__right{
+    width: 20%;
+    font-size: 50px;
+    align-items: center;
+}
+.company__right span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(111, 111, 111, 0.299);
+    color: rgba(4, 4, 54, 0.483);
+    border-radius: 50%;
+    transition: .5s;
+
+}
+.company__right span:hover{
+    background-color: rgba(111, 111, 111, 0.666);
+    color: rgba(4, 4, 54, 0.85);
+}
+
+
+.company__left{
+    width: 80%;
+    align-items: start;
+}
+
+.sub__header__company{
+    font-size: 30px;
+    font-weight: lighter;
+}
+#header__company{
+    font-size: 80px;
+}
+.search .col-md-4{
+    /* border: 1px solid red; */
+    
+}
+
+.search{
+    height: auto;
+}
+.search-field{
+    width: 100% !important;
+    height: 60px;
+    outline: none !important;
+}
+.search-field:focus{
+    border-color: red !important;
+    box-shadow: red !important;
+}
+.seat__container{
+    display: none;
+
+}
+.seat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* border: 1px solid red; */
+    margin: 5px;
+    padding: 0;
+}
+.
+{
+    display: flex !important;
+}

@@ -1,0 +1,57 @@
+<div class="setting-container d-flex justify-content-center align-items-center">
+    <div class="setting row py-4">
+
+        <div class="col-3">first name</div>
+        <div class="col-9">
+            <input type="text" class="form-control" name="setting-fname">
+        </div>
+
+        <div class="col-3">last name</div>
+        <div class="col-9"><input type="text" class="form-control" name="setting-lname"></div>
+
+        <div class="col-3">email</div>
+        <div class="col-9"><input type="email" class="form-control" name="setting-email"></div>
+
+        <div class="col-3">password</div>
+        <div class="col-9"><input type="password" class="form-control" name="setting-password"></div>
+
+        <div class="col-3">about</div>
+        <div class="col-9"><input type="text" class="form-control" name="setting-about"></div>
+
+        <div class="col-3">preview</div>
+        <div class="col-9 py-1"><img  id="setting-preview" alt=""
+                style="width: 250px; height: 200px;"></div>
+                <!-- src="../assets/img/avatar3.jpg" -->
+
+        <div class="col-3">image</div>
+        <div class="col-3">
+            <p><label for="setting-file" style="cursor: pointer;">upload image <i class="fa fa-upload"></i></label></p>
+            <input type="file" accept="image/*" name="setting-image" id="setting-file" onclick="loadImg(event)"
+                 class="form-control d-none">
+        </div>
+        <script>
+            let loadImg = function (event) {
+            let arr = [];
+            arr.push(event.target.files[0])
+     
+            let image = document.querySelector('#setting-preview');
+            // const mediastream = await navigator.mediaDevices.getUserMedia({image: true});
+            // const video = document.createElement('video')
+            // image.srcObject = mediastream;
+        //    let image = (HTMLMediaElement.srcObject 
+        //     console.log(HTMLMediaElement.srcObject 
+                        // image.src = 'hello-world'
+                        // console.log(URL.createObjectURL())
+                        //   image.srcObject = URL.createObjectURL(event.target.files[0]);
+            image.src = URL.createObjectURL(new Blob(arr, {type: "application/text"}));
+
+                 }
+        </script>
+
+
+        <div class="col-12 d-flex justify-content-end pr-5">
+            <button class="btn btn-primary mx-1">reset</button>
+            <button class="btn btn-success mx-1">reset</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="login_form bg-danger">
+    <div class="container form-container login__formContent d-flex justify-content-center align-items-center align-self-center flex-column bg-light border">
+            <form action="/users/signin" method="POST" class="w-100  d-flex flex-column">
+                <div class="form_head d-flex justify-content-center align-items-center">
+                    <h4 class="head_text">SIGN IN</h4>
+                </div>
+
+                <p class="lead mx-auto" style="text-align: center;"">
+                       welcome back <br><span style=" font-size: 13px;"> sign to continue with your account</span>
+                </p>
+
+                <div class="field-email d-flex">
+                    <span><i class="fa fa-envelope"></i></span><input type="email" name="email" class="form-control usermail"
+                        placeholder="email" required>
+                </div>
+                <span class="error-msg"></span>
+
+                <div class="field-password d-flex">
+                    <span><i class="fa fa-key"></i></span><input type="password" name="password" class="form-control password"
+                        placeholder="password" required>
+                </div>
+                <span class="error-msg"></span>
+
+                <div class="field-login">
+                    <button type="submit" class="btn btn-primary">login</button>
+
+                </div>
+
+            </form>
+            <div class="form-bott d-flex flex-column">
+                <p>dont have an account? <a href="/users/signup">Sign up</a></p>
+                <a href="/users/recovery" class="text-right">forgot password?</a>
+
+
+            </div>
+
+            <%# include('./partials/errMessages'); %>
+            <% error = []%>
+
+    </div>
+
+</div>

@@ -1,0 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/font/css/all.css">
+    <link rel="stylesheet" href="../assets/font/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/customCss.css">
+    <link rel="stylesheet" href="../assets/css/recover.css">
+
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+</head>
+
+<body>
+    <div class="main_recovery d-flex justify-content-md-center align-items-md-center pt-4">
+
+        <div class="recovery-form row ">
+
+            <div class="form-wrapper  col-sm-12 col-md-6 p-0">
+                <div class="form-container d-flex flex-column justify-content-center align-items-center">
+                    <div class="recovery_head d-flex justify-content-md-center align-items-md-center">
+                        <h4 class="head_text">recover password</h4>
+                    </div>
+
+                    <form action="/recoveryister" method="POST">
+
+                        <%#include ./partials/errMessages %>
+
+                        <div class="recover-email recovery-email">
+                            <i class="fa fa-envelope"></i><input type="email" class="form-control account-email"
+                                placeholder="email" name="mail" value="<%= typeof name != 'undefined' ? name : '' %>">
+                        </div>
+
+
+                        <div
+                            class="policy d-flex justify-content-center align-items-center flex-column align-self-center mx-auto">
+                            <p class="terms">By clicking the Sign Up button, you have agree to our <span
+                                    style="color: aqua;">Terms & conditions</span> ,
+                                and <span style="color: aqua;"> Privacy Policy</span>.
+                            </p>
+                            <button type="submit" class="recovery_button btn rounded-pill">send</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="recovery-desc col-sm-12 col-md-6 p-0">
+                <div class="Linen d-flex justify-content-center align-items-center flex-column px-sm-2 px-md-5 ">
+                    <h3 class="pt-md-4">password recovery</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam vitae reprehenderit
+                        inventore veniam co.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>

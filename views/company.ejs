@@ -1,0 +1,54 @@
+<header class="company__header">
+    <%- include('header') %>
+    <div class="company__banner container d-flex">
+
+        <div class="company__left">
+            <h1 class="sub__header__company">traveling bus</h1>
+            <h1 id='header__company'>stc intercity</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Laboriosam, sit amet consectetur<br> adipisicing elit. Laboriosam, sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
+            <button class="btn btn__all__inverse">explore <i class="fa fa-arrow-right"></i></button>
+
+        </div>
+        <div class="company__right">
+            <span><i class='fa fa-play'></i></span>
+        </div>
+
+
+    </div>
+</header>
+
+<section class="">
+    <div class="jumbotron jumbotron-fluid mt-5 px-5">
+        <div class="search row input-group d-flex justify-content-between align-items-center">
+
+            <div class="col-sm-12 col-md-4 input-group-append p-0">
+                <button class="btn btn-secondary getSearch"><i class="fa fa-search"></i></button>
+                <input type="text" name="" id="address" class="search-field form-control rounded-0 rounded-right"
+                    placeholder="from...">
+            </div>
+            
+            <div class="col-sm-12 col-md-4 p-0 border rounded">
+                <input type="text" name="" id="" class=" search-field form-control rounded-0 rounded-right"
+                    placeholder="destination...">
+            </div>
+
+            <div class="col-sm-12 col-md-4 input-group-prepend p-0">
+                <input type="text" class="form-control search-field rounded-0 rounded-right" id="travelDate"
+                    name='tavelDate' placeholder="mm/dd/yyyy">
+                <button class="btn btn-secondary"><i class="fa fa-calendar"></i></button>
+            </div>
+
+        </div>
+
+        <div class="search-result col-12 border pt-5 w-100">
+            <!-- display search item -->
+        </div>
+        <div id="seats"></div>
+
+    </div>
+</section>
+
+<%- include('partials/seats') %>
+
+
+<%# $(document).ready(function(){ $('.slider').slick({ infinite: true, speed: 500, fade: true, cssEase:'linear', autoplay: true, autoplaySpeed:5000, arrows: false}) %>

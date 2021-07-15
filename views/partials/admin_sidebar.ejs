@@ -1,0 +1,127 @@
+<div class="sidebar admin-sidebar p-4">
+    <div class="sidebarLogo">
+        <a href="#">
+            <h2>goBus</h2>
+        </a>
+        <a href="#"><img src="../assets/img/namibra.png" alt="hello"></a>
+    </div>
+    <div class="avatar">
+        <div class="avatar-img">
+            <img src="../assets/img/avatar3.jpg" alt="" style="width: 50px; height: 50px;">
+        </div>
+        <div class="name-pos">
+            <h3>Basit Salis</h3>
+            <h6>Manager</h6>
+        </div>
+    </div>
+    <div class="sidenav">
+        <ul>
+            <li>
+                <a href="/admin/admin-dashboard" id="dashboard">
+                    <span><i class="fa fa-home"></i></span>
+                    <span class="nav-item">dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/buses" id="bus">
+                    <span><i class="fa fa-bus"></i></span>
+                    <span class="nav-item" id="buses">buses</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/booking-details" id="booking__detail">
+                    <span><i class="fas fa-users-cog"></i></span>
+                    <span class="nav-item">bookings detail</span>
+                </a>
+            </li>
+
+            <li class="nav__dropdown">
+                <a href="/admin/report" id="report">
+                    <span><i class="fa fa-chart-line"></i></span>
+                    <span class="nav-item">report</span>
+                </a>
+            </li>
+            <li class="nav__dropdown">
+                <a id="message">
+                    <span<i class="fas fa-envelope-square"></i></span>
+                    <span class="nav-item">message</span>
+                </a>
+            </li>
+            <div class="dropdown__collapse">
+                <ul class="d-flex flex-column px-auto">
+                    <a class="nav__drop__item" id="message-new"><i class="fas fa-ellipsis-h px-2"></i>new</a>
+                    <a class="nav__drop__item" id="message-inbox"><i class="fas fa-ellipsis-h px-2"></i>inbox</a>
+                    <a class="nav__drop__item" id="message-sent"><i class="fas fa-ellipsis-h px-2"></i>sent</a>
+                </ul>
+            </div>
+            <li><i class="fas fa-times-circle"></i></li>
+            <li><i class="fas fa-envelope-open-text"></i></li>
+            <li><i class="fas fa-comments"></i></li>
+            <li><i class="fas fa-comment-alt"></i></li>
+         
+        </ul>
+    </div>
+</div>
+
+<header class="w-100 shadow admin__header border bg-sm-danger">
+    <div class="head-inner d-flex justify-content-between align-items-center flex-md-row ">
+        <div class="head-left d-flex justify-content-sm-center position-relative py-sm-1">
+            <div class="admin_search d-flex">
+                <input type="text" class="form-control">
+                <button><i class="fa fa-paper-plane text-dark"></i></button>
+            </div>
+        </div>
+
+        <div class="head-right py-sm-1">
+            <ul class="d-flex justify-content-around justify-content-md-end align-items-center h-100">
+                <li>
+                    <div class="profile d-flex justify-content-center align-items-center">
+                        <div class="avatar-img">
+                            <img src="../assets/img/avatar3.jpg" alt="" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="avatar-name name-pos">
+                            <h4>Basit Salis</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="hav-dot dropdown open">
+                    <span class="btn text-dark" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></span>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                       <div class="row">
+                           <div class="col-6">name</div>
+                           <div class="col-6">nasit</div>
+                       </div>
+                    </div>
+                </li>
+
+                <li class="hav-dot dropdown open">
+                    <span class="btn text-dark" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><i  class="fa fa-envelope"></i></span>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                       <div class="row">
+                           <div class="col-12">see messages</div>
+                       </div>
+                    </div>
+                </li>
+
+            
+                <div class="nav-item dropdown border-none open">
+                    <span class="btn text-dark" type="button" id="triggerId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-tools"></i>
+                    </span>
+
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item text-dark" href="/admin/admin-profile">profile</a>
+                        <a class="dropdown-item text-dark" href="/admin/admin-settings">setting</a>
+                        <a class="dropdown-item text-dark" href="./signout">logout</a>
+                    </div>
+                </div>
+
+                <li class="bar"><span><i class="fa fa-bars"></i></span></li>
+            </ul>
+        </div>
+
+    </div>
+</header>

@@ -1,0 +1,531 @@
+
+
+/* ========modal @admin====== */
+.modal-content {
+	background: rgb(205, 205, 255);
+}
+
+.form__item {
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 211, 0.292);
+}
+
+.form__item label {
+	color: #5e5e5e;
+}
+
+.admin-main {
+	background-color: #fff !important;
+	overflow-x: hidden !important;
+}
+
+.form__item input {
+	background: transparent;
+	border: none;
+}
+
+.form__item input:focus {
+	background: transparent;
+	border: none !important;
+}
+
+
+/* admin end */
+
+
+/* admin dashboard  */
+.admin-main {
+	background: rgba(202, 202, 202, 0.843);
+	height: 2000px;
+}
+
+.sidebar {
+	width: 250px;
+	height: 100vh;
+	padding: 20px;
+	position: fixed;
+	overflow: hidden;
+	overflow-y: auto;
+	transition: .2s;
+	background-color: white;
+	box-shadow: 0 0 8px rgb(233, 233, 233);
+}
+
+.sidebar .sidebarLogo {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.sidebar .sidebarLogo a img {
+	width: 60px;
+	border-radius: 50%;
+}
+
+.sidebar .sidebarLogo h2 {
+	font-size: 40px;
+	color: var(--primaryColor);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidebar .sidebarLogo a {
+	text-decoration: none;
+}
+
+.sidebar .sidebarLogo a:last-child {
+	display: none;
+}
+
+.sidebar .avatar {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.avatar-img {
+	border-radius: 100%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.sidebar .avatar .name-pos h6 {
+	color: rgba(146, 146, 146, 0.753);
+}
+
+.sidenav ul li a {
+	display: flex;
+	align-items: center;
+	color: #111010;
+	padding: 15px 10px;
+	transition: .4s;
+	text-decoration: none;
+	border-radius: 2px;
+}
+
+.sidenav ul li a:hover {
+	color: white;
+	background-color: var(--primaryColor);
+}
+
+.sidenav ul li a .nav-item {
+	margin-left: 10px;
+	border: none;
+	text-transform: capitalize;
+
+}
+.nav__dropdown{
+	overflow: hidden;
+	transition: .4s ease-in-out;
+}
+.dropdown__collapse{
+	background-color: #adadad;
+	max-height: 100rem;
+	border-radius: .25rem;
+	margin-top: 1rem;
+	/* display: none; */
+}
+.nav__drop__item{
+	padding: 5px 20px;
+	font-size: 13px;
+	color: #fff;
+}
+.nav__dropdown:hover .dropdown__collapse{
+	max-height: 100rem !important;
+}
+/*===== header=== */
+/* change later here */
+.hero {
+	width: 100%;
+	margin-left: 250px;
+	padding: 15px;
+	min-height: 80px;
+	box-shadow: #adadad;
+}
+.head-inner {
+    width: 80%;
+    height: 10vh;
+	margin-left: 250px;
+}
+
+
+.bars {
+	display: none;
+}
+
+
+
+.head-left {
+    width: 40%;
+    height: 80%;
+    margin: 0 0 0 20px;
+}
+.head-left .admin_search {
+	width: 100%;
+    height: 100%;
+}
+
+.head-left input {
+	width: 100%;
+	height: 100%;
+    border: none;
+    border: 1px solid gainsboro;
+	padding-left: 25px;
+	/* box-shadow: 0 0 8px #ccc; */
+}
+
+.head-left button {
+	width: 15%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	text-align: center;
+	font-size: 20px;
+	color:  var(--primaryColor);
+    background-color:#fff;
+    border: 1px solid gainsboro;
+}
+.head-right{
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.head-right ul{
+    height: initial;
+    margin: 0;
+}
+.head-right ul li {
+	list-style: none;
+	margin: 0 20px;
+
+}
+
+.head-right ul li .profile {
+    width: 200px;
+	display: flex;
+	margin-right: 10px;
+}
+
+.head-right ul li .profile .avatar-img {
+	align-items: center;
+}
+
+.head-right ul li span i {
+	font-size: 23px;
+}
+
+.head-left ul li span:hover {
+	color: var(--primaryColor);
+}
+
+.head-right ul li.hav-dot span {
+	position: relative;
+}
+
+.head-right ul li.hav-dot span::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 8px;
+	height: 8px;
+	background-color: var(--primaryColor);
+	border-radius: 50px;
+}
+
+.home_row {
+	width: 100%;
+	margin-left: 250px;
+}
+
+.man {
+	width: 100%;
+	padding: 15px;
+	box-shadow: 0 0 8 #ccc;
+}
+
+.man .info-card {
+	margin: 20px auto;
+}
+
+.man .info-card .card {
+	width: 100%;
+	min-height: 220px;
+	padding: 20px;
+	background-color: var(--primaryColor);
+	border-radius: 10px;
+	color: #fff;
+	overflow: hidden;
+}
+
+.man .info-card .card::before,
+.man .info-card .card::after {
+	content: '';
+	position: absolute;
+	top: -25px;
+	right: -55px;
+	width: 190px;
+	height: 190px;
+	border-radius: 100%;
+	background-color: #adadad60;
+}
+
+.man .info-card .card::after {
+	top: auto;
+	bottom: -10%;
+	right: -30px;
+}
+
+.man .info-card .card .card-icon {
+	margin-bottom: 15px;
+	width: 60px;
+	height: 60px;
+	background-color: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 8px #ccc;
+}
+
+.man .info-card .card .card-icon i {
+	font-size: 13px;
+}
+
+.man .info-card .card .card-detail {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.main-table {
+	width: 100%;
+	padding: 20px 20px;
+}
+
+/* hide sidenav */
+.sidebar.hide {
+	width: 100px;
+	overflow: hidden;
+}
+
+.sidebar.hide .sidebarLogo a:last-child {
+	display: block;
+}
+.sidebar.hide .sidebarLogo a:first-child {
+	display: none;
+}
+.sidebar.hide .name-pos,
+.sidebar.hide .nav-item {
+	display: none;
+}
+.sidebar.hide span:not(.nav-item) {
+	font-size: 20px;
+	padding-left: 10px;
+}
+.slide-left {
+	margin-left: 100px;
+}
+header,
+.home_row {
+	transition: .2s;
+}
+.main-container {
+	height: 100vh;
+}
+.main-container .col-3 {
+	padding: 0;
+	height: 150px;
+	border-radius: 5px;
+}
+.live-update {
+	padding: 0;
+	height: 150px;
+	width: 98%;
+	border-radius: 2px;
+	box-shadow: var(--shadow);
+	background-color: #fff;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chart {
+	width: 100%;
+	height: 500px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 10px;
+	box-shadow: var(--shadow);
+}
+.monthly {
+	width: 95%;
+	height: 200px;
+	margin-top: 50px;
+	padding: 10px auto;
+	border: 1px solid rgb(177, 177, 177);
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: var(--shadow);
+}
+/* =========settings======= */
+.setting_row {
+	background-color: #adadad2a;
+	height: 100vh;
+}
+.page_header {
+	height: 20px !important;
+}
+.setting_left table td {
+	border: 2px solid yellowgreen;
+	padding: 30px 10px;
+	border: none;
+}
+
+/* booking */
+.bookings-container,
+.setting-container{
+	height: auto;
+	padding: 20px 0px;
+	/* border: 1px solid rgb(25, 10, 10); */
+	background-color:#f1f3f6;
+
+
+}
+.bookings,.setting{
+	width: 90%;
+	height: auto;
+	background-color: #fff;
+	/* border: 1px solid red; */
+
+}
+.bookings input,
+.bookings textarea,
+.setting input{
+	border-radius: 0;
+}
+.bookings input::placeholder,
+.bookings textarea::placeholder,
+.setting input::placeholder{
+	padding-left: 150px;
+	
+}
+.bookings input,
+.bookings textarea,
+.setting input,
+.bookings select{
+	width: 95%;
+	color: #adadad;
+	border: 1px solid rgba(10, 3, 54, 0.497);
+
+}
+
+.bookings div,
+.setting div {
+	padding: 20px 5px;
+	padding: 10px 0 10px 50px;
+	border: none;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: rgb(10, 3, 54);
+	font-weight: 700;
+}
+
+/* booking end*/
+
+/* admin dashboard end */
+
+@media screen and (max-width: 992px) {
+
+	/***** admin ******/
+	.sidebar {
+		left: -250px;
+		z-index: 1000;
+	}
+
+	.sidebar.hide {
+		width: 250px;
+		left: 0;
+	}
+
+	.head-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+	}
+
+	.head-left form {
+		margin-left: 10px;
+    }
+    .head-left{
+        width: 40%;
+        margin: 0 0 0 40px;
+    }
+
+    .head-right{
+        width: 40%;
+    }
+    .head-right h4{
+        font-size: 17px;
+    }
+
+	.admin__header,
+	.home_row {
+		margin-left: 0;
+	}
+
+	.sidebar.hide .sidebarLogo a:first-child,
+	.sidebar.hide .name-pos,
+	.sidebar.hide .sidenav .nav-item {
+		display: block;
+	}
+
+	.sidebar.hide .sidebarLogo a:first-child {
+		display: none;
+	}
+
+
+
+}
+@media screen and (max-width: 767px) {
+    .head-inner {
+        width: 100%;
+        height: 15vh;
+    }
+    .head-left{
+        width: 100%;
+        height: 50%;
+    }
+    .admin_search{
+        width: 90% !important;
+        height: 90% !important;
+    }
+   
+    .head-right{
+        width: 100%;
+        height: 50%;
+    }
+    .man .info-card {
+        margin-bottom: 15px;
+    }
+    
+    .admin__header .head-inner .head-right form {
+        height: 40px;
+    }
+    
+    
+    .man .main-table .user-table {
+        overflow-x: auto;
+    }
+    
+    .man .main-table .user-table {
+        width: 700px;
+    }
+
+}
+@media screen and (max-width: 576px) {
+ 
+    .sidebar {
+        width: 100px;
+        background-color: red;
+	}
+
+}

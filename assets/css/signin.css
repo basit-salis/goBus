@@ -1,0 +1,413 @@
+:root {
+    --primaryColor: blueviolet;
+    --primaryColor_transparent: rgba(32, 63, 202, 0.678);
+    --secondaryColor: blanchedalmond;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #adadad;
+    --textColor: #5e5e5e;
+    --mainSpacing: 1rem;
+    --mainTransition: all 0.3s linear;
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ======login form style */
+
+
+
+.login_form {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    color: var(--primaryColor);
+    background: linear-gradient(to bottom, rgba(34, 140, 179, 0.769), rgba(240, 251, 255, 0.769));
+}
+
+
+.login__formContent {
+    position: relative;
+    width: 60vw;
+    height: 80vh;
+    margin-top: 10vh;
+    border-radius: 2px;
+    color: var(--primaryColor);
+    box-shadow: 5px 5px 25px 2px rgb(146, 157, 160);
+    background-color: rgb(255, 255, 255);
+}
+
+.field-login,
+.field-password,
+.field-email {
+    width: 90%;
+    height: 80px;
+    margin: 10px 0;
+    align-self: center;
+}
+
+.field-password span,
+.field-email span {
+    width: 15%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+}
+
+
+.field-password input,
+.field-email input {
+    width: 90%;
+    height: 100%;
+
+}
+
+.field-login button {
+    width: 100% !important;
+}
+
+.error-msg {
+    align-self: center;
+    font-size: 10px;
+
+}
+
+.form_head {
+    /* position: relative;
+    width: 100%;
+    height: 70px;
+    color: #fff; */
+}
+
+.form_head h4 {
+    /* margin: 10px 0; */
+}
+
+.form_head i {
+    /* padding: 5px 10px;
+    cursor: pointer; */
+}
+
+/* ======login form end======= */
+
+
+
+/* registration form */
+.main_reg {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(243, 237, 237, 0.932);
+
+}
+
+.reg-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    margin: 10px 20px;
+    border-radius: 5px;
+    color: var(--primaryColor);
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+
+.form-container-reg {
+    position: relative;
+    height: 90vh;
+    border-radius: 2px;
+    color: var(--primaryColor);
+    box-shadow: 5px 5px 25px 2px rgb(146, 157, 160);
+    background-color: rgb(255, 255, 255);
+}
+
+.reg_head {
+    width: 100%;
+    height: 15%;
+    padding: 0;
+}
+
+.reg_head h4 {
+    color: rgb(66, 38, 221);
+    text-shadow: 1px 1px 5px rgba(117, 117, 117, 0.678);
+}
+
+.policy {
+    width: 40vw;
+    margin-top: 40px;
+
+}
+
+.Terms {
+    padding: 5px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+}
+
+.group-desc {
+    height: 90vh;
+    color: var(--mainWhite);
+}
+
+.linen {
+    height: 90vh;
+    /* background: linear-gradient(to top ,rgba(43, 40, 184, 0.589),rgb(25, 24, 97)); */
+    background-image: linear-gradient(to top, rgba(42, 40, 184, 0.692), rgba(84, 83, 160, 0.822)), url(../image/undraw_authentication_fsn5.png);
+    background-position: right;
+    background-size: cover;
+}
+
+
+.reg-name,
+.reg-password,
+.reg-email,
+.reg-password {
+    position: relative;
+    margin: 30px 0 0 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 50px;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.reg-name i,
+.reg-password i,
+.reg-email i {
+    width: 40px;
+    height: 100%;
+    background: rgba(206, 192, 253, 0.295);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    /* border: 1px solid var(--primaryColor); */
+}
+
+.reg-name input:focus {
+    border-color: #5e5e5e !important;
+}
+
+.reg-name input,
+.reg-password input,
+.reg-email input {
+    background: rgba(206, 192, 253, 0.295);
+    border: none;
+    /* border: 1px solid var(--primaryColor); */
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+}
+
+.reg_button_ {
+    margin: 30px 0 0 0;
+    background-color: var(--primaryColor);
+    box-shadow: var(--shadow);
+}
+
+.reg_button_ a {
+    color: var(--mainWhite);
+
+}
+
+.reg_button {
+    width: 80%;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    box-shadow: var(--shadow);
+}
+
+.reg_button:hover {
+    background-color: rgb(51, 7, 226);
+    color: rgb(223, 222, 222);
+}
+
+/* registration end */
+
+
+
+/* phone mode */
+@media screen and (max-width: 768px) {
+
+    /* login */
+
+    .login_form {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        color: var(--primaryColor);
+    }
+
+    .login__formContent {
+        width: 90vw;
+        height: 85vh;
+        margin-top: 10vh;
+
+    }
+
+
+    .form {
+        position: relative;
+        margin: 0;
+        height: 60%;
+        border-radius: 2px;
+        color: var(--primaryColor);
+        box-shadow: 5px 5px 25px 2px rgba(23, 13, 68, 0.596);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form_head {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        color: var(--primaryColor);
+    }
+
+    .form_head h4 {
+        margin: 10px 0;
+    }
+
+    .form_head i {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .field-login,
+    .field-password,
+    .field-email {
+        background-color: white;
+        height: 80px;
+        width: 90%;
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+
+    .field-password input,
+    .field-email input {
+        background: none;
+        border: none;
+        border: 1px solid var(--primaryColor);
+        border-radius: 0;
+        height: 100%;
+        outline: none;
+    }
+
+    .field-login button {
+        width: 100% !important;
+    }
+
+    /* ======login form end======= */
+
+
+
+    /* registration form */
+
+    .reg-form {
+        height: 90%;
+        margin-top: 0;
+    }
+
+    .reg-name,
+    .reg-password,
+    .reg-email,
+    .reg-password {
+        height: 40px;
+        width: 90%;
+    }
+
+    .group-desc {
+        display: none;
+
+    }
+
+    .policy {
+        width: 90%;
+        margin-top: 40px;
+        margin-top: 40px;
+    }
+
+    .Terms {
+        padding: 5px 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+    }
+
+    .reg_button_ {
+        margin: 30px 0 0 0;
+        background-color: var(--primaryColor);
+        box-shadow: var(--shadow);
+    }
+
+    .reg_button_ a {
+        color: var(--mainWhite);
+
+    }
+
+    .reg_button {
+        margin: 0;
+        width: 80%;
+        color: var(--mainWhite);
+        background-color: var(--primaryColor);
+        box-shadow: var(--shadow);
+    }
+
+    .reg_button:hover {
+        color: var(--primaryColor);
+        background-color: var(--mainWhite);
+        border-color: var(--primaryColor);
+    }
+
+
+    /* registration end */
+
+
+}
+
+/* phone mode end */
+
+@media screen and (max-width: 558px) {
+    .login__formContent {
+        width: 90vw;
+        margin-top: 5vh;
+    }
+
+    .field-login,
+    .field-password,
+    .field-email {
+        height: 60px;
+        width: 90%;
+
+    }
+
+    .field-password span,
+    .field-email span {
+        width: 15%;
+        height: 60px;
+    }
+
+
+
+}
