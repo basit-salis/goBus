@@ -3,24 +3,32 @@
         "from" : "Accra",
         "destination" : "navrongo",
         "date" : "12/34/21",
-        "something" : "12"
+        "reporting_time": "2:00 PM",
+        "departure_time": "3:00 PM",
+        "trip_id" : "123"
     },
     {
         "from" : "Achimota",
         "destination" : "tamale",
         "date" : "23/34/21",
-        "something" : "12"
+        "reporting_time": "2:30 PM",
+        "departure_time": "3:30 PM",
+        "trip_id" : "1234"
     },
     {
         "from" : "kumasi",
         "destination" : "Accra",
         "date" : "12/34/21",
-        "something" : "12"
+        "reporting_time": "12:00 PM",
+        "departure_time": "1:00 PM",
+        "trip_id" : "12345"
     },
     {
-        "from" : "kumasi",
+        "from" : "tamale",
         "destination" : "Accra",
         "date" : "12/34/21",
-        "something" : "12"
+        "reporting_time": "4:00 PM",
+        "departure_time": "5:00 PM",
+        "trip_id" : "123456"
     }
 ]

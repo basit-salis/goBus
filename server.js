@@ -37,7 +37,8 @@ app.use('/assets',express.static(__dirname + '/assets'));
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
-app.use('/admin', require('./routes/admin'));
+app.use('/admin',require('./routes/admin'));
+app.use('/admin/admin-dashboard',routeProtect,(req,res)=> res.render('admin-dashboard'));
 app.use('/users/home',routeProtect,(req,res)=>{res.render('home')});
 app.use('/users/company',routeProtect,(req,res)=>{res.render('company')});
 

@@ -23,16 +23,13 @@ router.get("/recovery",authController.recover_get);
 router.get("/signout",authController.signout_get);
 
 // get seats
-router.get("/seats",model.get_seats);
+router.get("/seats/:id",model.get_seatsById);
 
-router.get("/paymentSlip",(req,res)=>{
-    console.log('data2',req);
-   res.render('paymentSlip');
-});
+router.get("/paymentSlip/:id",model.get_paySlipById);
 
-router.post("/paymentSlip",(req,res)=>{
-   res.render('paymentSlip',{data});
-});
+router.get("/paymentSlip",model.get_paySlip);
+
+router.get("/search_scheduled_bus",model.get_search);
 
 
 

@@ -328,14 +328,14 @@
 
 }
 
-/* tiicket */
+/* ticket */
 .receipt_page {
 	height: 100vh;
+	margin: 0 100px;
 }
 
 .receipt_page table td {
 	padding: 20px 10px;
-	/* border: 1px solid green; */
 }
 
 .receipt_page table td p {
@@ -344,7 +344,6 @@
 	font-size: 19px;
 	margin: 0;
 	text-transform: uppercase;
-	/* border: 1px solid red; */
 }
 
 #ticket-info {
@@ -465,7 +464,7 @@
 		background-position-x: 85%;
 	}
 
-	
+
 }
 
 @media screen and (max-width: 767px) {

@@ -1,11 +1,9 @@
-
-
 // ==============DISPLAY NAV-ITEM @ADMIN===========
 
 let buses = document.querySelector('#buses');
 let test = document.querySelector('.test');
 let navItem = [...document.querySelectorAll('.nav__drop__item')];
-
+console.log(navItem)
 
 
 navItem.forEach(item => {
@@ -54,9 +52,9 @@ function getItems(info) {
     // console.log(info.id);
     let page__id = info.id;
     let page__url = info.url;
-    console.log('imed func',page__id,page__url);
+    console.log('imed func', page__id, page__url);
 
-    
+
     let requestPage;
 
     function makeRequest() {
@@ -67,12 +65,13 @@ function getItems(info) {
             return false;
         }
         requestPage.onreadystatechange = viewBuses;
-        console.log('request',page__url);
+        console.log('request', page__url);
         requestPage.open('GET', page__url);
         requestPage.send();
 
     }
-     makeRequest();
+    makeRequest();
+
     function viewBuses() {
         try {
             if (requestPage.readyState === XMLHttpRequest.DONE) {
@@ -80,7 +79,7 @@ function getItems(info) {
                 if (requestPage.status === 200) {
                     let page__content = requestPage.responseText;
                     test.innerHTML = page__content;
-                } else { 
+                } else {
                     console.log('error');
                 }
             }
@@ -93,40 +92,38 @@ function getItems(info) {
 
 }
 
-// delelte bus
-let delBtn = document.querySelector('#del__btn');
-delBtn.addEventListener('click', deleteBusRequest);
-    let requestPage;
 
-    function deleteBusRequest() {
 
-        requestPage = new XMLHttpRequest();
-        if (!requestPage) {
-            console.log('error in request');
-            return false;
-        }
-        requestPage.onreadystatechange = viewBuses;
-        requestPage.open('GET', '/admin/buses');
-        requestPage.send();
 
-    }
+    // schedulle
+//     let delBtn =[...document.querySelectorAll('.del__btn')];
+//     // console.log('btn',delBtn)
+
+
+// delBtn.forEach(btn => {
     
-    function viewBuses() {
-        try {
-            if (requestPage.readyState === XMLHttpRequest.DONE) {
-                console.log(requestPage.status);
-                if (requestPage.status === 200) {
-                    console.log('working');
-                } else { 
-                    console.log('error');
-                }
-            }
-        } catch (error) {
-            console.log('error from cact');
+//     // BusID = btn.getAttribute('id');
+//     // console.log('btn',BusID)
+//     $('btn').on("click", function(e){
+//     BusID = e.target.id;
 
-        }
+//         console.log(BusID);
+//         const ID = {
+//             BusID
+//         };
+//         const stringifyID = JSON.stringify(ID);
+//         $.ajax({
+//             type:'POST', 
+//             url:'/admin/buses/:id',
+//             success: function(ID){
+//                 alert('bus removed');
+//             }
+//         })
+//     })
+// });
 
-    }
+// });
+
 
 
 // ==============SAVE BUSES @ADMIN===========

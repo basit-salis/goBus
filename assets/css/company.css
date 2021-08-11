@@ -56,10 +56,6 @@
 #header__company{
     font-size: 80px;
 }
-.search .col-md-4{
-    /* border: 1px solid red; */
-    
-}
 
 .search{
     height: auto;
@@ -75,7 +71,9 @@
 }
 .seat__container{
     display: none;
-
+}
+.show__seats{
+    display: flex !important;
 }
 .seat{
     display: flex;

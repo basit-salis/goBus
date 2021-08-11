@@ -1,14 +1,26 @@
-
 <div class="admin-main">
 
-    <%#include('header') %>
-    <div class="row">
-      <%- include('partials/admin_sidebar') %>
-      <div class=" row test home_row">
-
-      
+  <%#include('header') %>
+  <div class="row">
+    <%- include('partials/admin_sidebar') %>
+    <div class=" row test home_row message_row">
+      <div class="col-4">
+        <div class="new_message">
+            <a class="nav__drop__item  message_item" id="message-new"><i class="fas fa- px-2"></i>new</a>
+        </div>
       </div>
-  
+      <div class="col-4">
+        <div class="inbox_message">
+          <a class="nav__drop__item  message_item" id="message-inbox"><i class="fas fa- px-2"></i>inbox</a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="sent_message">
+          <a class="nav__drop__item message_item" id="message-sent"><i class="fas fa- px-2"></i>sent</a>
+        </div>
+      </div>
     </div>
-  
+
   </div>
+
+</div>
