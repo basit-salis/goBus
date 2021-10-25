@@ -27,6 +27,8 @@ router.get("/seats/:id",model.get_seatsById);
 
 router.get("/paymentSlip/:id",model.get_paySlipById);
 
+router.post("/paymentSlip/:id",model.post_paySlipById);
+
 router.get("/paymentSlip",model.get_paySlip);
 
 router.get("/search_scheduled_bus",model.get_search);

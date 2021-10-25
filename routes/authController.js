@@ -16,7 +16,7 @@ const handleError = (errors) => {
 // creating jwt
 const createToken = (id) =>{
     let maxAge = 60 * 60 * 24 *2;
-    return jwt.sign({id},'basit',{
+    return  jwt.sign({id},'basit',{
         expiresIn: maxAge
     });
 };
@@ -37,7 +37,7 @@ module.exports.recover_get = (req, res) => {
 //signin post handle
 module.exports.signin_post = async (req, res) => {
    
-    console.log('req::', req.body);
+    console.log('req::', req);
     const {
         password,
         email
@@ -67,10 +67,10 @@ module.exports.signin_post = async (req, res) => {
                         res.redirect('home');
                     }else{ 
                         error.push({message:'invalid password'});
-                        console.log(error)
+                        console.log(error);
                         res.render('signin',{error});
                     }}
-                })
+                });
             }
             else{
                 res.render('signin');
@@ -136,7 +136,7 @@ module.exports.signup_post = async (req, res) => {
             try {
                 if (error.length == 0) {
                     let date = new Date();
-                    console.log('time',date.getTime())
+                    console.log('time',date.getTime());
                     //hash signup password and inserting user data into db;
                     let sql = `INSERT INTO USER(USERNAME, EMAIL, PASSWORD) VALUES ('${username}','${mail}','${hash}')`;
                     connection.query(sql, err => {

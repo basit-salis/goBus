@@ -29,9 +29,13 @@ router.get('/buses/:id',adminController.get_BusesById);
 
 router.get('/schedule',adminController.get_Schedule);
 
-router.get('/bus',adminController.get_Bus);
+router.get('/passengerBookings/:id',adminController.get_passengerBookingsById);
+
+router.get('/editPassenger/:edit',adminController.edit_passenger);
 
 router.get('/schedule/:id',adminController.get_scheduleById);
+
+router.post('/schedule/:name/:id',adminController.edit_scheduleById);
 
 router.post('/schedule/:id',adminController.post_scheduleById);
 
